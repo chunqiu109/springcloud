@@ -17,7 +17,6 @@ public class Sort {
 			System.out.println(arr[i]);
 			
 		}
-		
 	}
 	
 	/**
@@ -39,6 +38,5 @@ public class Sort {
 				}
 			}
 		}
-		
 	}
 }
