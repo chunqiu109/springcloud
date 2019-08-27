@@ -23,8 +23,8 @@ public class Sort {
 	 * 
 	* @Title: popSort
 	* @Description: 冒泡排序
-	* @param     参数
-	* @return void    返回类型
+	* @param     排序数组
+	* @return void    null
 	* @throws
 	 */
 	public static void popSort(int [] arr) {
@@ -44,8 +44,8 @@ public class Sort {
 	 * 
 	 * @Title: select
 	 * @Description:选择排序
-	 * @param     参数
-	 * @return void    返回类型
+	 * @param     排序数组
+	 * @return void    null
 	 * @throws
 	 */
 	public static void selectSort(int [] arr) {
