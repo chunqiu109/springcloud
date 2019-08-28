@@ -23,11 +23,33 @@ public class Sort {
 	 * 
 	* @Title: popSort
 	* @Description: 冒泡排序
-	* @param     参数
-	* @return void    返回类型
+	* @param     排序数组
+	* @return void    null
 	* @throws
 	 */
 	public static void popSort(int [] arr) {
+		
+		for (int i = 0; i < arr.length - 1; i++) {//声明比较的轮数
+			for (int j = 0; j < arr.length - 1 - i; j++) {
+				if (arr[j] > arr[j +1]) {
+					int tmp = arr [j + 1];
+					arr[j + 1]= arr [j];
+					arr[j]= tmp;
+					
+				}
+			}
+		}
+	}
+	
+	/**
+	 * 
+	 * @Title: select
+	 * @Description:选择排序
+	 * @param     排序数组
+	 * @return void    null
+	 * @throws
+	 */
+	public static void selectSort(int [] arr) {
 		
 		for (int i = 0; i < arr.length - 1; i++) {//声明比较的轮数
 			for (int j = 0; j < arr.length - 1 - i; j++) {
