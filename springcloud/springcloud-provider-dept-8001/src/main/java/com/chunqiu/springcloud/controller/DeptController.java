@@ -25,7 +25,6 @@ import com.chunqiu.springcloud.service.DeptService;
  */
 
 @RestController
-@RequestMapping(produces= MediaType.APPLICATION_JSON_UTF8_VALUE)
 public class DeptController {
 
 	@Autowired
