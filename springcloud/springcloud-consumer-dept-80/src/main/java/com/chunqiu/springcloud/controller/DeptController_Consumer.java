@@ -24,7 +24,11 @@ import com.chunqiu.springcloud.entities.Dept;
 @RestController
 public class DeptController_Consumer {
 
-	private static final String REST_URL_PREFIX = "http://localhost:8001";
+//	private static final String REST_URL_PREFIX = "http://localhost:8001";
+	
+	//在配置类restTemplate中加入了注解@LoadBalanced之后，restTemplate调用的url的时候
+	//不能直接访问地址，需要把地址改成你所调用的url在eureka上注册的application.name
+	private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-DEPT";
 
 	@Autowired
 	private RestTemplate restTemplate;
