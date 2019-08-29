@@ -6,6 +6,9 @@ package com.chunqiu.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
+
+import com.chunqiu.myrule.MyselfRule;
 
 /**
  * @ClassName: DeptProvider8001_App
@@ -16,6 +19,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+//在启动微服务的时候就会去加载我们自定义的Ribbon配置类，从而使配置生效
+@RibbonClient(value = "SPRINGCLOUD-DEPT",configuration = MyselfRule.class)
 public class DeptConsumer80_App {
 
 	/**
