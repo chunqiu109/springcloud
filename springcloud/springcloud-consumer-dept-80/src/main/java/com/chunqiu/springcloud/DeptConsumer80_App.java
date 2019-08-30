@@ -21,6 +21,7 @@ import com.chunqiu.myrule.MyselfRule;
 @EnableEurekaClient
 //在启动微服务的时候就会去加载我们自定义的Ribbon配置类，从而使配置生效
 //@RibbonClient(name = "SPRINGCLOUD-DEPT",configuration = MyselfRule.class)
+//@RibbonClient(name="SPRINGCLOUD-DEPT",configuration=MyselfRule.class)
 @RibbonClient(name="SPRINGCLOUD-DEPT",configuration=MyselfRule.class)
 public class DeptConsumer80_App {
 

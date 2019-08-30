@@ -77,8 +77,7 @@ public class MyRandomRule extends AbstractLoadBalancerRule{
 	
 	@Override
 	public Server choose(Object key) {
-		// TODO Auto-generated method stub
-		return null;
+		return choose(getLoadBalancer(), key);
 	}
 
 	@Override
