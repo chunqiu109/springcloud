@@ -35,5 +35,5 @@ banner:
 info:
   app.name: atguigu-microservicecloud
   company.name: www.atguigu.com
-  build.artifactId: springcloud-provider-dept-8001
+  build.artifactId: springcloud-provider-dept-8002
   build.version: 0.0.1-SNAPSHOT

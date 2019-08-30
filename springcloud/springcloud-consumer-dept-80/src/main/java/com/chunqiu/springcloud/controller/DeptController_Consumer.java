@@ -46,6 +46,7 @@ public class DeptController_Consumer {
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/consumer/dept/list")
 	public List<Dept> list() {
+		System.out.println("进入列表");
 		return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
 	}
 
