@@ -20,7 +20,7 @@ import com.chunqiu.springcloud.entities.Dept;
  *
  */
 
-@FeignClient(value = "SPRINGCLOUD-DEPT")
+@FeignClient(value = "SPRINGCLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
 	@RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)

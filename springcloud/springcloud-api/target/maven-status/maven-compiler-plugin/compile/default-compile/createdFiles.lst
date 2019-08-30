@@ -1,2 +1,4 @@
-com\chunqiu\springcloud\entities\Dept.class
+com\chunqiu\springcloud\service\DeptClientServiceFallbackFactory.class
 com\chunqiu\springcloud\service\DeptClientService.class
+com\chunqiu\springcloud\entities\Dept.class
+com\chunqiu\springcloud\service\DeptClientServiceFallbackFactory$1.class

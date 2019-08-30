@@ -79,6 +79,7 @@
 		<module>springcloud-consumer-dept-feign</module>
 		<module>microservicecloud-provider-dept-hystrix-8001</module>
 		<module>springcloud-provider-dept-hystrix-8001</module>
+		<module>springcloud-consumer-hystrix-dashboard</module>
 	</modules>
 
 	<build>
